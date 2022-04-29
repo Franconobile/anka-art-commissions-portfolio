@@ -58,6 +58,7 @@ body {
     top: 100px;
     left: 0;
     transform: all .5s ease;
+    transition: .5s;
     z-index: 5;
 }
 
@@ -77,6 +78,11 @@ body {
 }
 
 .cont-menu a {
+
+    display: inline-block;     
+    position: relative;    
+    z-index: 1;     
+    padding-right: 12em;
     text-decoration: none;
     color: white;
 }
@@ -236,6 +242,7 @@ body {
 
 .active {
     transform: translate(-600px);
+    transition: .5s;
 }
 
 .opacity {
