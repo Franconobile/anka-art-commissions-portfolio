@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: beige;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+
+/*     Styles      */
+
+.navbar {
+    background: #daa8b0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-icon svg{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.burger-icon {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.nav-title {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: 20px;
+}
+
+.nav-title img {
+    position: relative;
+    top: 5px;
+}
+
+.cont-menu {
+    background: rgb(186 173 212);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.411);
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transform: all .5s ease;
+    z-index: 5;
+}
+
+.cont-menu ul {
+    padding: 20px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li {
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(154, 145, 173, 0.397);
+}
+
+.cont-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.cont-menu ul li:hover {
+    background-color: rgb(220, 208, 243);
+    color: rgb(255, 191, 191);
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    
+    border: solid 2px rgb(253, 255, 255);
+    border-radius: 50px;
+    background: rgba(204, 124, 124, 0.445);
+    width: 1000px;
+    height: 1200px;
+}
+
+.container h2 {
+    letter-spacing: 3px;
+    border-bottom: 3px solid white;
+    box-shadow: rgb(218, 218, 203);
+}
+
+.container-info1 {
+    position: relative;
+    top: 2em;
+    padding: 2px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.container-info2 {
+    position: relative;
+    top: 5em;
+}
+
+.container-info2 h3{
+    letter-spacing: 3px;
+    font-style: italic;
+    text-align: center;
+}
+
+.conditions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    font-size: 20px;
+    position: relative;
+    top: 50px;
+}
+
+.conditions .willColor {
+    color: aqua;
+}
+
+.conditions .willColor2 {
+    color: rgb(219, 67, 118);
+}
+
+.conditions-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+
+    height: 200px;
+    position: relative;
+    left: 150px;
+    gap: 200px;
+    top: 40px;
+}
+
+.wont {
+    padding: 150px;
+}
+
+.container-info3 {
+    position: relative;
+    letter-spacing: 3px;
+    top: 10em;
+}
+
+.container-info3 h3{
+    font-style: italic;
+    text-align: center;
+}
+
+/* Table styles */
+
+.table-content {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 800px;
+}
+
+.table-content thead tr {
+    background: rgb(162, 146, 194);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-content td {
+    background: rgba(186, 177, 204, 0.616);
+}
+
+.table-content th,
+.table-content td {
+    padding: 12px 15px;
+}
+
+.container-info4 {
+    position: relative;
+    top: 16em;
+}
+
+.container-info4 h3 {
+    font-size: 30px;
+}
+
+.discord img {
+    width: 30px;
+    height: 30px;
+}
+
+.discord {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    position: relative;
+    top: 50px;
+    color: rgb(141, 91, 233);
+}
+
+
+
+/* Style for JS script */
+
+.active {
+    transform: translate(-600px);
+}
+
+.opacity {
+    background-color: rgb(218, 218, 203);
+    transition: all .5s ease; 
+}
+
+

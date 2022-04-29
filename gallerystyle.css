@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: rgb(255, 255, 255);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.navbar {
+    background: #daa8b0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-icon svg{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.burger-icon {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}
+
+.nav-title {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: 20px;
+}
+
+.nav-title img {
+    position: relative;
+    top: 5px;
+}
+
+.cont-menu {
+    background: rgb(186 173 212);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.411);
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transform: all .5s ease;
+    z-index: 5;
+}
+
+.cont-menu ul {
+    padding: 20px 0px 20px 0px;
+    list-style: none;
+}
+
+.cont-menu ul li {
+    color: white;
+    display: block;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(154, 145, 173, 0.397);
+}
+
+.cont-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.cont-menu ul li:hover {
+    background-color: rgb(220, 208, 243);
+    color: rgb(255, 191, 191);
+
+}
+
+
+/*   Styles    */
+
+.slider {
+    position: relative;
+    left: 20%;
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+/* Manual navigation */
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+ 
+.manual-btn:hover {
+    background: #a200ff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+
+/* css for automatic navigation */
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #a200ff;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #a200ff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn1 {
+    background: #a200ff;
+}
+
+/* Style for JS script */
+
+.active {
+    transform: translate(-600px);
+}
+
+.opacity {
+    background-color: rgb(218, 218, 203);
+    transition: all .5s ease; 
+}
+
+
