@@ -185,6 +185,11 @@ body {
     text-align: center;
 }
 
+#google_translate_element {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Table styles */
 
 .table-content {

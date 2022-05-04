@@ -92,6 +92,11 @@ body {
 
 }
 
+#google_translate_element {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 /*   Styles    */
 
@@ -123,6 +128,7 @@ body {
     width: 800px;
     height: 500px;
 }
+
 
 /* Manual navigation */
 

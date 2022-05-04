@@ -13,5 +13,3 @@ iconMenu.addEventListener('click', (e) => {
         e.target.setAttribute('src', document.getElementById('#icono-menu'))    
     }
 })
-
-

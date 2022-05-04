@@ -156,6 +156,11 @@ body {
     color: #658dc9;
 }
 
+#google_translate_element {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Style for JS script */
 
 .active {
