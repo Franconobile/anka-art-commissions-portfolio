@@ -180,6 +180,11 @@ body {
     margin-left: -100%;
 }
 
+#radio7:checked ~ .first{
+    margin-left: -120%;
+}
+
+
 
 /* css for automatic navigation */
 
@@ -223,6 +228,10 @@ body {
 }
 
 #radio6:checked ~ .navigation-auto .auto-btn6 {
+    background: #a200ff;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7 {
     background: #a200ff;
 }
 
