@@ -129,6 +129,9 @@ body {
 .container-info2 {
     position: relative;
     top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .container-info2 h3{
@@ -137,42 +140,28 @@ body {
     text-align: center;
 }
 
-.conditions {
+.conditions1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    font-size: 20px;
-    position: relative;
-    top: 50px;
+    gap: 20px;
 }
 
-.conditions .willColor {
+.conditions2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conditions1 .willColor {
     color: aqua;
 }
 
-.conditions .willColor2 {
+.conditions2 .willColor2 {
     color: rgb(219, 67, 118);
 }
 
-.conditions-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    font-size: 15px;
 
-    height: 200px;
-    position: relative;
-    left: 150px;
-    gap: 200px;
-    top: 40px;
-}
 
-.wont {
-    padding: 150px;
-}
 
 .container-info3 {
     position: relative;
@@ -254,5 +243,68 @@ body {
     background-color: rgb(218, 218, 203);
     transition: all .5s ease; 
 }
+
+
+/* Media queries */
+
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        width: 350px;
+        height: 1500px;
+    }
+
+    .container-info2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .conditions1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .conditions2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .wont {
+        padding-left: 90px;
+    }
+
+    .table-content {
+        margin: 25px 0;
+        min-width: 40px;
+    }
+
+    .cont-menu {
+        width: 350px;
+    }
+    
+    .cont-menu ul {
+
+        width: 200px;
+    }
+    
+    .cont-menu ul li {
+        color: white;
+        width: 200px;
+        font-size: 20px;
+
+}
+}
+
+
 
 
